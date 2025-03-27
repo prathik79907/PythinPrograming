@@ -1,11 +1,6 @@
-import random
-n=random.randint(1,100)
-while True:
- print("guess the number")
- x=int(input("enter the number:"))
- if(x<n):
-  print("the number is too low")
- elif(x>n):
-  print("number is too high")
- else: 
-  print("your guess is correct")
+n=int(input("enter the number of rows"))
+for i in range(1,n+1):
+    for j in range(1,i):
+        if(j<=i):
+            print(1,end=" ")
+    print()        
