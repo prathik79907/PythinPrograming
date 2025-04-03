@@ -1,0 +1,16 @@
+def credit(amount,bal):
+    bal=bal+amount
+    return bal
+    
+def debit(amount,bal):
+    bal=bal-amount
+    return bal
+        
+def show_bal(bal):
+    print(bal)
+    
+    
+bal = 1000
+bal = credit(500, bal)
+bal = debit(300, bal)
+show_bal(bal)
