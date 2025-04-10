@@ -1,0 +1,56 @@
+
+def crew(l1,n1):
+    
+    for i in range(n1):
+        temp=int(input("enter number:"))
+        l1.append(temp) 
+    return l1  
+    
+    
+def evensum(l1,n1):
+    sum=0
+    for i in range (n1):
+        if(i%2==0):
+            sum=sum+l1[i]
+    return sum    
+
+
+def oddsum(l1,n1):
+    sum=0
+    for i in range(n1):
+        if(i%2== 1):
+            sum=sum+l1[i]
+    return sum
+    
+    
+    
+    
+l1=[]
+l2=[]
+l3=[]
+n1=int(input("enter the length of list 1:"))
+n2=int(input("enter the length of list 2:"))
+n3=int(input("enter the length of list 3:"))
+l1=crew(l1,n1)
+print(l1)
+l2=crew(l2,n2)
+print(l2)
+l3=crew(l3,n3)
+print(l3)
+o1=oddsum(l1,n1)
+print(o1)
+o2=oddsum(l2,n2)
+print(o2)
+o3=oddsum(l3,n3)
+print(o3)
+e1=evensum(l1,n1)
+print(e1)
+e2=evensum(l2,n2)
+print(e2)
+e3=evensum(l3,n3)
+print(e3)
+required=(e1+e2+e3)*(o1+o2+o3)
+print(required)
+
+    
+    
